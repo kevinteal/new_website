@@ -1,0 +1,151 @@
+@charset "utf-8";
+/* CSS Document */
+/* DEFAULT IS LARGE SCREEN STYLED TO 1920PX */
+body{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:1em;
+	color:#404040;	
+	margin:0;
+	}
+
+@media screen and (max-width: 1366px) {
+	/* standard screen */
+.gold_bar{
+	width:1349px;
+	height:1em;
+	background-color:#d1c6a7;
+}
+	#main_bg{
+		width:1349px;
+		height:633px;
+		background-image:url(../imgs/room1366.jpg);
+		background-size:cover;
+	}
+	#nav{
+		margin:0 auto;
+		width:20%;
+		height:5em;
+		
+	}
+	.nav_left{
+		float:left;
+		box-sizing:border-box;
+		width:50%;
+		
+		text-align:right;
+	}
+	.nav_right{
+		box-sizing:border-box;
+		float:left;
+		width:50%;
+		border-left:1px solid #ff9540;
+	}
+	.nav_link{
+		box-sizing:border-box;
+		padding:0.3em;
+		width:100%;
+		height:1em;
+	}
+	#logo_kt_top{
+		width:90%;
+		margin:0 auto;
+		height:3.5em;
+		background-image:url(../imgs/ktlogo.png);
+		background-size:50px 50px;
+		background-repeat:no-repeat;
+	}
+	#center_main{
+		margin:0 auto;
+		width:90%;
+		height:290px;
+	}
+	#left_block{
+		position:relative;
+		float:left;
+		top:-90%;
+		left:0px;
+		background:#404040;
+		height:100%;
+		width:7%;
+	}
+	#right_block{
+		position:relative;
+		float:left;
+		top:-90%;
+		left:86%;
+		background:#404040;
+		height:100%;
+		width:7%;
+	}
+	#center_boxes{
+		position:relative;
+		top:0;
+		height:80%;
+		width:95%;
+		margin:0 auto;
+		z-index:998;
+		box-sizing:border-box;
+		padding:0px;
+		white-space: nowrap;
+		
+	}
+	#center_text{
+		position:relative;
+		top:65%;
+		left:0;
+		font-size:3em;
+		width:100%;
+		text-align:center;
+		z-index:999;
+		
+	}
+	.center_box{
+		width:10%;
+		height:25%;
+		background:#ff9540;
+		float:left;
+	}
+	.orange_text{
+		color:#ff8c30;
+	}
+	#wolf_logo{
+		margin:0 auto;
+		width:150px;
+		height:200px;
+		background-image:url(../imgs/wolflogo.png);
+		background-size:82px 150px;
+		background-position:center center;
+		background-repeat:no-repeat;	
+	}
+	#web_text{
+		position:relative;
+		margin:0 auto;
+		width:20%;
+		height:1.4em;
+		top:-20px;
+		font-size:1.4em;
+		letter-spacing:2px;
+		text-align:center;
+	}
+	
+	.wrapper{
+		background:red;
+		float:left;
+		height:100px;
+		width:1349px;
+		box-sizing:border-box;
+		padding:1em;
+	}
+	
+	
+	
+}
+@media screen and (max-width: 1024px) {
+	/* tablet wide screen */
+}
+@media screen and (max-width: 768px) {
+	/* tablet tall screen */
+}
+@media screen and (max-width: 360px) {
+	/* phone screen */
+}
