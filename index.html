@@ -11,19 +11,44 @@
 <script type="text/javascript" src="js/_js_wolf.js"></script>
 </head>
 <body>
+<div id="loading_screen">
+	<div id="wolf_loader">
+    
+    	<div id="wolftie_load"><img id="wolftie_img" src="imgs/wolflogo1.png" width="164" height="300" /></div>
+        <div class="loader_text">WOLF STUDIO APPS</div>
+    </div>
+</div><!-- end of loader -->
+
+
 <div id="page_wrap">
 <div id="main_bg">
 	<div id="nav">
     	<div class="nav_left">
-        	<div class="nav_link"> ABOUT </div>
+        
+        	<div onClick="scrollme('quote')" onMouseOver="play_with_text('about_nav')" class="nav_link">
+            	<div class="letter_text about_nav">T</div><div class="letter_text about_nav">U</div><div class="letter_text about_nav">O</div><div class="letter_text about_nav">B</div><div class="letter_text about_nav">A</div>
+            </div>
+            
             <div class="nav_link"></div>
-            <div class="nav_link"> WORK </div>
+            
+            <div onClick="scrollme('work_anchor')" onMouseOver="play_with_text('work_nav')" class="nav_link">
+            	<div class="letter_text work_nav">K</div><div class="letter_text work_nav">R</div><div class="letter_text work_nav">O</div><div class="letter_text work_nav">W</div>
+            </div>
         </div>
         <div class="nav_right">
+        
         	<div class="nav_link"></div>
-            <div class="nav_link"> HISTORY </div>
+            
+            <div onClick="scrollme('quote')" onMouseOver="play_with_text('history_nav')" class="nav_link">
+           		<div class="letter_text_l history_nav">H</div><div class="letter_text_l history_nav">I</div><div class="letter_text_l history_nav">S</div><div class="letter_text_l history_nav">T</div><div class="letter_text_l history_nav">O</div><div class="letter_text_l history_nav">R</div><div class="letter_text_l history_nav">Y</div>
+            </div>
+            
             <div class="nav_link"></div>
-            <div class="nav_link"> CONTACT </div>
+            
+            <div  onClick="scrollme('contact_anchor')" onMouseOver="play_with_text('contact_nav')" class="nav_link">
+            	<div class="letter_text_l contact_nav">C</div><div class="letter_text_l contact_nav">O</div><div class="letter_text_l contact_nav">N</div><div class="letter_text_l contact_nav">T</div><div class="letter_text_l contact_nav">A</div><div class="letter_text_l contact_nav">C</div><div class="letter_text_l contact_nav">T</div>
+            </div>
+            
         </div>
     </div><!--end of nav-->
 
@@ -44,7 +69,7 @@
 <div id="room_to_page"></div>
 <div id="quote">
 	&#8220;Logic will get you from A to Z; imagination will get you everywhere.&#8221;
-    <br/><span class="sml_text">- Albert Einstein</span>
+    <br/><span class="sml_text">Albert Einstein</span>
 </div>
 
 <div class="wrapper top_50">
@@ -66,9 +91,9 @@
 <div class="gold_bar"></div>
 
 
-<div class="wrapper set_height">
+<div  class="wrapper set_height">
 	<div class="long_top">
-    	<div class="title_box">WORK</div>
+    	<div id="work_anchor" class="title_box">WORK</div>
     </div>
     <div class="split_sml">
     	<div class="text_sml">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -80,8 +105,8 @@
     </div>
 </div><!--end of wrapperwork -->
 <div class="gold_bar"></div>
-<div class="no_pad_wrapper">
-	<div id="festival_bg" class="three_split"><div class="link_text">FESTIVAL DAY PLANNER</div></div>
+<div class="no_pad_wrapper black_bg">
+	<div id="festival_bg" onMouseOver="show_text()" onMouseOut="hide_text()" class="three_split"><div id="fest" class="link_text">FESTIVAL DAY PLANNER</div></div>
     <div id="cloud_bg" class="three_split"><div class="link_text">CLOUD POTATO</div></div>
     <div id="thought_bg" class="three_split"><div class="link_text">THOUGHT TRAIL</div></div>
     <div id="drag_bg" class="three_split"><div class="link_text">DRAG.js</div></div>
@@ -92,7 +117,7 @@
 
 <div class="wrapper set_height">
 	<div class="long_top">
-    	<div class="title_box">CONTACT</div>
+    	<div id="contact_anchor"  class="title_box">CONTACT</div>
     </div>
     <div class="long_bottom">
     	If you want to chat send a message to <span class="orange_prop">kevin.teal1@gmail.com</span>. Thanks for viewing my website.
