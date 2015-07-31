@@ -1,6 +1,16 @@
 @charset "utf-8";
 /* CSS Document */
 /* DEFAULT IS LARGE SCREEN STYLED TO 1920PX */
+@font-face {
+    font-family:quote_font;
+   	src:url(quote_font.ttf);
+   /* src:url(../font/ShadowsIntoLight.ttf);*/
+}
+@font-face {
+    font-family:heading_font;
+   	src:url(heading-Black.ttf);
+   /* src:url(../font/ShadowsIntoLight.ttf);*/
+}
 body{
 	font-family:Arial, Helvetica, sans-serif;
 	font-size:1em;
@@ -8,10 +18,35 @@ body{
 	background:#e2e2e2;
 	margin:0;
 	}
-
+	#page_wrap{
+		margin:o auto;
+	}
+	#room_to_page{
+		
+		width:1349px;
+		height:0.8em;
+		 background: -webkit-linear-gradient(#8f8f8f, #e2e2e2); /* For Safari 5.1 to 6.0 */
+   		 background: -o-linear-gradient(#8f8f8f, #e2e2e2); /* For Opera 11.1 to 12.0 */
+   		 background: -moz-linear-gradient(#8f8f8f, #e2e2e2); /* For Firefox 3.6 to 15 */
+   		 background: linear-gradient(#8f8f8f, #e2e2e2); /* Standard syntax (must be last) */
+	}
+	#quote{
+		text-align:center;
+		width:100%;
+		margin:0 auto;
+		float:left;
+		font-family:quote_font;
+		font-size:2em;
+		line-height:1em;
+	}
+	.sml_text{
+		font-size:0.5em !important;
+		color:#ff9540;
+	}
 @media screen and (max-width: 1366px) {
 	/* standard screen */
 .gold_bar{
+	float:left;
 	width:1349px;
 	height:0.8em;
 	background-color:#d1c6a7;
@@ -130,8 +165,6 @@ body{
 	}
 	
 	.wrapper{
-		position:relative;
-		top:-50px;
 		float:left;
 		width:1349px;
 		box-sizing:border-box;
@@ -156,6 +189,7 @@ body{
 		margin:0 auto;
 		width:30%;
 		font-size:2em;
+		font-family:heading_font;
 		height:2em;
 		border:2px solid #ff9540;
 	}
@@ -182,7 +216,125 @@ body{
 		width:6%;
 		height:80px;
 	}
-	
+	.top_50{
+		position:relative;
+		top:-50px;
+	}
+	.long_top{
+		margin:0 auto;
+		text-align:center;
+		width:50%;
+		height:38%;
+	}
+	.set_height{
+		height:330px !important;
+	}
+	.split_sml{
+		width:50%;
+		height:62%;
+		float:left;
+		box-sizing:border-box;
+		padding:1em;
+	}
+	.text_sml{
+		width:90%;
+		margin:0 auto;
+		font-size:1.3em;
+		height:100%;
+		line-height:1.6em;
+	}
+	.no_pad_wrapper{
+		width:1349px;
+		height:1000px;
+		float:left;
+	}
+	.three_split{
+		width:33.33%;
+		height:50%;
+		background:red;
+		float:left;
+		color:#ff9540;
+		text-align:center;
+		box-sizing:border-box;
+		font-size:5em;
+		font-family:heading_font;
+		display: table; 
+	}
+	#festival_bg{
+		background-image:url(../imgs/festival.png);
+		background-repeat:no-repeat;
+		background-size:cover;
+		background-position:center;
+	}
+	#cloud_bg{
+		background-image:url(../imgs/tv.png);
+		background-repeat:no-repeat;
+		background-size:cover;
+		background-position:center;
+	}
+	#thought_bg{
+		background-image:url(../imgs/thought.png);
+		background-repeat:no-repeat;
+		background-size:cover;
+		background-position:center;
+	}
+	#drag_bg{
+		background-image:url(../imgs/drag1.png);
+		background-repeat:no-repeat;
+		background-size:cover;
+		background-position:center;
+	}
+	#form_bg{
+		background-image:url(../imgs/bet.png);
+		background-repeat:no-repeat;
+		background-size:cover;
+		background-position:center;
+	}
+	#draw_bg{
+		background-image:url(../imgs/draw.png);
+		background-repeat:no-repeat;
+		background-size:cover;
+		background-position:center;
+	}
+	.link_text{
+		display: table-cell; 
+	  	vertical-align: middle; 
+	 	text-align: center; 
+	}
+	.long_bottom{
+		margin:0 auto;
+		height:62%;
+		width:30%;
+		text-align:center;
+		box-sizing:border-box;
+		padding:1em;
+		font-size:1.3em;
+		line-height:1.6em;
+	}
+	.orange_prop{
+		color:#ff9540;
+	}
+	#profile_img{
+		float:left;
+		height:400px;
+		width:100%;
+		background-image:url(../imgs/profile1366.jpg);
+		background-repeat:no-repeat;
+		background-size:cover;
+		background-position:center;
+	}
+	.set_height400{
+		height:400px !important;
+	}
+	#bottom_kt_logo{
+		margin:auto;
+		width:20%;
+		height:100%;
+		background-image:url(../imgs/ktlogo.png);
+		background-repeat:no-repeat;
+		background-size:140px 140px;
+		background-position:center;
+	}
 	
 	
 }
