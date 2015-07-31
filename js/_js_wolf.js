@@ -106,9 +106,4 @@ function scrollme(where){
 }
 
 
-function show_text(){
-	$("#fest").animate({opacity: 1 }, 500);
-}
-function hide_text(){
-	$("#fest").animate({opacity: 0 }, 500);
-}
+

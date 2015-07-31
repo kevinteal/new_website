@@ -296,53 +296,53 @@ body{
 		font-size:5em;
 		font-family:heading_font;
 		display: table; 
-		transition: 0.7s;
+		transition: all 1.4s;
 		cursor:pointer;
 	}
-	.three_split:hover{
+	#festival_bg:hover,#cloud_bg:hover,#thought_bg:hover,#drag_bg:hover,#form_bg:hover,#draw_bg:hover{
 		box-shadow: inset 0 0 0 25px black;
+		background-size:250%;
 	}
 	#festival_bg{
 		background-image:url(../imgs/festival.png);
 		background-repeat:no-repeat;
-		background-size:cover;
+		background-size:100%;
 		background-position:center;
 	}
 	#cloud_bg{
 		background-image:url(../imgs/tv.png);
 		background-repeat:no-repeat;
-		background-size:cover;
+		background-size:100%;
 		background-position:center;
 	}
 	#thought_bg{
 		background-image:url(../imgs/thought.png);
 		background-repeat:no-repeat;
-		background-size:cover;
+		background-size:100%;
 		background-position:center;
 	}
 	#drag_bg{
 		background-image:url(../imgs/drag1.png);
 		background-repeat:no-repeat;
-		background-size:cover;
+		background-size:100%;
 		background-position:center;
 	}
 	#form_bg{
 		background-image:url(../imgs/bet.png);
 		background-repeat:no-repeat;
-		background-size:cover;
+		background-size:100%;
 		background-position:center;
 	}
 	#draw_bg{
 		background-image:url(../imgs/draw.png);
 		background-repeat:no-repeat;
-		background-size:cover;
+		background-size:100%;
 		background-position:center;
 	}
 	.link_text{
 		display: table-cell; 
 	  	vertical-align: middle; 
 	 	text-align: center;
-		opacity:0;
 	}
 	.long_bottom{
 		margin:0 auto;
