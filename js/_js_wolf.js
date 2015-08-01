@@ -76,20 +76,13 @@ function changboxes(){
 function play_with_text(element){
 	var letters = document.getElementsByClassName(element);
 	var rand =  Math.floor(Math.random() * (letters.length));
-	
-	console.log(rand);
-	var kk = $(letters[rand]).css("borderSpacing");
-	var tt = kk.substr(0,1);
-	var animate_val = 180;
-	if(tt==0){
-		animate_val = 180;
-	}else{
-		animate_val = 0;
-	}
-	
-	$(letters[rand]).animate({  borderSpacing: animate_val }, {
-    step: function(now,fx) {        
-      $(this).css('-webkit-transform','rotateY('+now+'deg)'); 
+		
+	$(letters[rand]).animate({  borderSpacing: 180 }, {
+    step: function(now,fx) {
+		if(now>90){
+         		$(this).css("color","#ff9540");
+        }
+	  $(this).css('-webkit-transform','rotateY('+now+'deg)'); 
       $(this).css('-moz-transform','rotateY('+now+'deg)');
       $(this).css('transform','rotateY('+now+'deg)');
     },
@@ -105,5 +98,20 @@ function scrollme(where){
 	$("body,html").animate({ scrollTop: locationy },1500);
 }
 
-
+function reset_text(element){
+	var letters = document.getElementsByClassName(element);
+	for(var i = 0;i<letters.length;i++){
+		$(letters[i]).animate({  borderSpacing: 0 }, {
+		step: function(now,fx) {
+			if(now<90){
+				$(this).css("color","#404040");
+			}
+		  $(this).css('-webkit-transform','rotateY('+now+'deg)'); 
+		  $(this).css('-moz-transform','rotateY('+now+'deg)');
+		  $(this).css('transform','rotateY('+now+'deg)');
+		},
+		duration:'slow'
+	},'linear');
+	}
+}
 
