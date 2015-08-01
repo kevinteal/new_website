@@ -24,6 +24,27 @@ $(document).ready(function(e) {
 		 clearInterval(myVar);
 	}, 6000);
 	
+	$( "#about_link" ).mouseenter(function() {
+		play_with_text("about_nav");
+	  }).mouseleave(function() {
+			reset_text("about_nav");
+	  });
+	  $( "#work_link" ).mouseenter(function() {
+		play_with_text("work_nav");
+	  }).mouseleave(function() {
+			reset_text("work_nav");
+	  });
+	   $( "#history_link" ).mouseenter(function() {
+		play_with_text("history_nav");
+	  }).mouseleave(function() {
+			reset_text("history_nav");
+	  });
+	   $( "#contact_link" ).mouseenter(function() {
+		play_with_text("contact_nav");
+	  }).mouseleave(function() {
+			reset_text("contact_nav");
+	  });
+	
 });
 
 
