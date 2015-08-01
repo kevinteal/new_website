@@ -18,7 +18,13 @@ $(document).ready(function(e) {
 	setTimeout(function(){ 
 		$( "#loading_screen" ).animate({opacity: 0 }, 1000, function() {
 		// Animation complete.
-		$("#loading_screen").css("display","none"); 
+		$("#loading_screen").css("display","none");
+		
+		var main_letters = document.getElementsByClassName("main_letters");
+		for (var i = 0; i < main_letters.length; i++) {			
+			$(main_letters[i]).delay(i*100).animate({top:"0px"},900,"swing");
+		}
+		
 	  });
 		var myBoxes = setInterval(function(){ changboxes() }, 3000);
 		 clearInterval(myVar);
@@ -44,6 +50,7 @@ $(document).ready(function(e) {
 	  }).mouseleave(function() {
 			reset_text("contact_nav");
 	  });
+	  
 	
 });
 

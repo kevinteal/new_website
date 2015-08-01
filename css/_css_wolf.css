@@ -128,7 +128,7 @@ body{
 	#center_main{
 		margin:0 auto;
 		width:90%;
-		height:290px;
+		height:280px;
 	}
 	#left_block{
 		position:relative;
@@ -168,6 +168,7 @@ body{
 		width:100%;
 		text-align:center;
 		z-index:998;
+		overflow:hidden;
 		
 	}
 	.center_box{
@@ -381,6 +382,17 @@ body{
 		background-position:center;
 	}
 	
+	.main_letters{
+		position:relative;
+		overflow:hidden;
+		display:inline-block;
+	}
+	.above{
+		top:-330px;
+	}
+	.below{
+		top:300px
+	}
 	
 }
 @media screen and (max-width: 1024px) {
