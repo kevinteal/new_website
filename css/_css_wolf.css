@@ -22,7 +22,7 @@ body{
 	}
 	#room_to_page{
 		
-		width:1349px;
+		/*width:1349px;*/
 		height:0.8em;
 		 background: -webkit-linear-gradient(#8f8f8f, #e2e2e2); /* For Safari 5.1 to 6.0 */
    		 background: -o-linear-gradient(#8f8f8f, #e2e2e2); /* For Opera 11.1 to 12.0 */
@@ -76,17 +76,14 @@ body{
 	float:left;
 }
 
-	
-@media screen and (max-width: 1366px) {
-	/* standard screen */
 .gold_bar{
 	float:left;
-	width:1349px;
+	/*width:1349px;*/
 	height:0.8em;
 	background-color:#d1c6a7;
 }
 	#main_bg{
-		width:1349px;
+		/*width:1349px;*/
 		height:633px;
 		background-image:url(../imgs/room1366.jpg);
 		background-size:cover;
@@ -102,7 +99,6 @@ body{
 		float:left;
 		box-sizing:border-box;
 		width:50%;
-		
 		text-align:right;
 	}
 	.nav_right{
@@ -182,7 +178,7 @@ body{
 	}
 	#wolf_logo{
 		margin:0 auto;
-		width:150px;
+		/*width:150px;*/
 		height:200px;
 		background-image:url(../imgs/wolflogo.png);
 		background-size:82px 150px;
@@ -202,7 +198,7 @@ body{
 	
 	.wrapper{
 		float:left;
-		width:1349px;
+	/*	width:1349px;*/
 		box-sizing:border-box;
 		padding:1em;
 	}
@@ -232,7 +228,6 @@ body{
 	.text_main{
 		margin:0 auto;
 		width:90%;
-		height:75%;
 		box-sizing:border-box;
 		padding:1em;
 		font-size:1.3em;
@@ -265,6 +260,9 @@ body{
 	.set_height{
 		height:330px !important;
 	}
+	.set_height200{
+		height:330px !important;
+	}
 	.split_sml{
 		width:50%;
 		height:62%;
@@ -280,7 +278,7 @@ body{
 		line-height:1.6em;
 	}
 	.no_pad_wrapper{
-		width:1349px;
+	/*	width:1349px;*/
 		height:1000px;
 		float:left;
 	}
@@ -410,9 +408,114 @@ body{
 		top:300px
 	}
 	
+@media screen and (max-width: 1366px) {
+	/* standard screen */
+	
+	#room_to_page{
+		width:1349px;
+	}
+.gold_bar{
+	width:1349px;
+}
+	#main_bg{
+		width:1349px;
+	}
+	#wolf_logo{
+		width:150px;
+	}
+	.wrapper{
+		width:1349px;
+	}
+	.no_pad_wrapper{
+		width:1349px;
+		
+	}
+	
+	
+	
 }
 @media screen and (max-width: 1024px) {
 	/* tablet wide screen */
+	#room_to_page{
+		width:1024px;
+		height:0.8em;
+		 background: -webkit-linear-gradient(#8f8f8f, #e2e2e2); /* For Safari 5.1 to 6.0 */
+   		 background: -o-linear-gradient(#8f8f8f, #e2e2e2); /* For Opera 11.1 to 12.0 */
+   		 background: -moz-linear-gradient(#8f8f8f, #e2e2e2); /* For Firefox 3.6 to 15 */
+   		 background: linear-gradient(#8f8f8f, #e2e2e2); /* Standard syntax (must be last) */
+	}
+	
+
+.gold_bar{
+	float:left;
+	width:1024px;
+	height:0.8em;
+	background-color:#d1c6a7;
+}
+	#main_bg{
+		width:1024px;
+		height:633px;
+		background-image:url(../imgs/room1366.jpg);
+		background-size:cover;
+	}
+	#nav{
+		margin:0 auto;
+		width:20%;
+		height:5em;
+		cursor:pointer;
+	}
+	#wolf_logo{
+		margin:0 auto;
+		width:150px;
+		height:200px;
+		background-image:url(../imgs/wolflogo.png);
+		background-size:82px 150px;
+		background-position:center center;
+		background-repeat:no-repeat;	
+	}
+	.wrapper{
+		float:left;
+		width:1024px;
+		box-sizing:border-box;
+		padding:1em;
+	}
+	.no_pad_wrapper{
+		width:1024px;
+		height:1300px;
+	}
+	#center_text{
+		font-size:2.5em;
+	}
+	#web_text{
+		width:30%;
+	}
+	#logo_box{
+		width:70px;
+		height:70px;
+	}
+	.set_height{
+		height:400px !important;
+	}
+	.set_height200{
+		height:400px !important;
+	}
+	.long_top{
+		height:25%;
+	}
+	.split_sml{
+		height:75%;
+	}
+	.three_split{
+		width:50%;
+		height:33.33%;
+	}
+	.long_bottom{
+		width:50%;
+		height:75%;
+	}
+	.set_height200{
+		height:300px !important;
+	}
 }
 @media screen and (max-width: 768px) {
 	/* tablet tall screen */

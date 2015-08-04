@@ -28,7 +28,7 @@ $(document).ready(function(e) {
 	  });
 		var myBoxes = setInterval(function(){ changboxes() }, 3000);
 		 clearInterval(myVar);
-	}, 6000);
+	}, 1000);
 	
 	$( "#about_link" ).mouseenter(function() {
 		play_with_text("about_nav");
