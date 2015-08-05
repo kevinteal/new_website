@@ -16,6 +16,13 @@ body{
 	background:#e2e2e2;
 	margin:0;
 	}
+a{
+   color:inherit;
+   text-decoration:none;
+}
+a:visted{
+	color:inherit;
+}
 	#page_wrap{
 		margin:0 auto;
 		display:none;
@@ -188,7 +195,7 @@ body{
 	#web_text{
 		position:relative;
 		margin:0 auto;
-		width:20%;
+		width:30%;
 		height:1.4em;
 		top:-20px;
 		font-size:1.4em;
@@ -213,6 +220,9 @@ body{
 		width:100%;
 		height:25%;
 		text-align:center;
+	}
+	#mobile_gold{
+		display:none;
 	}
 	.title_box{
 		position:relative;
@@ -417,6 +427,9 @@ body{
 .gold_bar{
 	width:1349px;
 }
+.set_height{
+	height:400px !important;
+}
 	#main_bg{
 		width:1349px;
 	}
@@ -438,46 +451,19 @@ body{
 	/* tablet wide screen */
 	#room_to_page{
 		width:1024px;
-		height:0.8em;
-		 background: -webkit-linear-gradient(#8f8f8f, #e2e2e2); /* For Safari 5.1 to 6.0 */
-   		 background: -o-linear-gradient(#8f8f8f, #e2e2e2); /* For Opera 11.1 to 12.0 */
-   		 background: -moz-linear-gradient(#8f8f8f, #e2e2e2); /* For Firefox 3.6 to 15 */
-   		 background: linear-gradient(#8f8f8f, #e2e2e2); /* Standard syntax (must be last) */
+		
 	}
 	
 
 .gold_bar{
-	float:left;
 	width:1024px;
-	height:0.8em;
-	background-color:#d1c6a7;
+	
 }
 	#main_bg{
 		width:1024px;
-		height:633px;
-		background-image:url(../imgs/room1366.jpg);
-		background-size:cover;
-	}
-	#nav{
-		margin:0 auto;
-		width:20%;
-		height:5em;
-		cursor:pointer;
-	}
-	#wolf_logo{
-		margin:0 auto;
-		width:150px;
-		height:200px;
-		background-image:url(../imgs/wolflogo.png);
-		background-size:82px 150px;
-		background-position:center center;
-		background-repeat:no-repeat;	
 	}
 	.wrapper{
-		float:left;
 		width:1024px;
-		box-sizing:border-box;
-		padding:1em;
 	}
 	.no_pad_wrapper{
 		width:1024px;
@@ -519,7 +505,208 @@ body{
 }
 @media screen and (max-width: 768px) {
 	/* tablet tall screen */
+	#room_to_page{
+		width:768px;
+		
+	}
+	#nav{
+		width:30%;
+	}
+
+.gold_bar{
+	width:768px;
+	
+}
+	#main_bg{
+		width:768px;
+	}
+	.wrapper{
+		width:768px;
+	}
+	.no_pad_wrapper{
+		width:768px;
+		height:1300px;
+	}
+	#center_text{
+		font-size:1.9em;
+	}
+	#web_text{
+		width:50%;
+	}
+	.title_box{
+		width:40%;
+	}
+	.split_box{
+		height:680px;
+	}
+	#logo_box{
+		width:70px;
+		height:70px;
+	}
+	.set_height{
+		height:550px !important;
+	}
+	.set_height200{
+		height:400px !important;
+	}
+	.long_top{
+		height:25%;
+	}
+	.split_sml{
+		height:75%;
+	}
+	.three_split{
+		width:50%;
+		height:33.33%;
+	}
+	.long_bottom{
+		width:50%;
+		height:75%;
+	}
+	.set_height200{
+		height:300px !important;
+	}
 }
 @media screen and (max-width: 360px) {
 	/* phone screen */
+	#room_to_page{
+		width:360px;
+		
+	}
+	#nav{
+		width:100%;
+	}
+
+.gold_bar{
+	width:360px;
+	
+}
+	#main_bg{
+		width:360px;
+		height:391px;
+		background:url(../imgs/bg_mobile.jpg);
+	}
+	#center_main{
+		display:none;
+	}
+	.wrapper{
+		width:360px;
+		padding:0.5em;
+	}
+	.no_pad_wrapper{
+		width:360px;
+		height:1650px;
+	}
+	#center_text{
+		font-size:0.9em;
+	}
+	#logo_kt_top{
+		width:100%;
+		background-position:center;
+	}
+	#web_text{
+		top:10px;
+		width:100%;
+	}
+	.title_box{
+		width:50%;
+	}
+	.split_box{
+		height:550px;
+		width:100%;
+		margin-top:30px;
+		margin-bottom:50px;
+	}
+	.text_title{
+		height:15%;
+		margin-bottom:30px;
+	}
+	#logo_box{
+		display:none;
+	}
+	.set_height{
+		height:800px !important;/* HERE */
+	}
+	.long_top{
+		height:15%;
+	}
+	.text_sml{
+		width:100%;
+		height:100%;
+	}
+	.split_sml{
+		padding:0em;
+		width:100%;
+		height:40%;
+	}
+	.three_split{
+		width:100%;
+		height:16.66%;
+		font-size:3em;
+		padding:1em;
+	}
+	.long_bottom{
+		width:97%;
+		height:70%;
+	}
+	.set_height200{
+		height:300px !important;
+	}
+	.left_border{
+		border-left:none;
+	}
+	.text_main{
+		padding:0em;
+	}
+	.long_top{
+		width:100%;
+		height:15%;
+	}
+	.height30{
+		height:30% !important;
+	}
+	#bottom_kt_logo{
+		width:100%;
+		height:30%;
+		background-size:40px 40px;
+		background-position:left top;
+	}
+	#profile_img{
+		height:190px;
+		background-size:contain;
+		background-position:top;
+	}
+	.set_height400{
+		height:190px !important;
+	}
+	#festival_bg{
+		background-image:url(../imgs/festival_mobile.jpg);
+	}
+	#cloud_bg{
+		background-image:url(../imgs/tv_mobile.jpg);
+	}
+	#thought_bg{
+		background-image:url(../imgs/thought_mobile.jpg);
+	}
+	#drag_bg{
+		background-image:url(../imgs/drag1_mobile.jpg);
+	}
+	#form_bg{
+		background-image:url(../imgs/bet_mobile.jpg);
+	}
+	#draw_bg{
+		background-image:url(../imgs/draw_mobile.jpg);
+	}
+	#mobile_gold{
+		display:block;
+	}
+	#quote{
+		line-height:1.3em;
+	}
+	#wolf_loader{
+		width:100%;
+	}
+	.black_bg{
+			background-color:#d1c6a7 !important;
+	}
 }

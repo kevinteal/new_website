@@ -5,7 +5,6 @@ $(document).ready(function(e) {
 	var myVar = setInterval(function(){ changwolf() }, 1800);
 	
 	
-	
 	$("#page_wrap").css("display","block");
 	
 	var boxes = document.getElementsByClassName("center_box");
@@ -28,7 +27,7 @@ $(document).ready(function(e) {
 	  });
 		var myBoxes = setInterval(function(){ changboxes() }, 3000);
 		 clearInterval(myVar);
-	}, 1000);
+	}, 6000);
 	
 	$( "#about_link" ).mouseenter(function() {
 		play_with_text("about_nav");
@@ -143,3 +142,6 @@ function reset_text(element){
 	}
 }
 
+function go_to_page(page){
+	window.location ="portfolio/"+page+".html";
+}
